@@ -15,9 +15,9 @@
 		$db = new DB();
 		$nav = $db->navbar();
 		echo $nav;
-	?>																																								
+	?>
 	<!-- navbar close -->
-	
+
 	<div class = "container">
 		<div class = "row">
 			<div class = "col-md-5">
@@ -27,13 +27,13 @@
 					<p>We are available from 10am to 10pm. You can contact us through whatsapp, facebook, instagram and through this site. You can also directly call us to:</p>
 					<p>Contact Number : <a class = "active-link" href = "tel:0774027329">077 402 7329</a><br><br>
 					<a class = "social-link" href = "https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2F94774027329%3Ffbclid%3DIwAR1_D3oviNiEbyRw0SieimlcWu_WNGwMfo7SnM5WjL1p4zLVsTQz_lBLECY&h=AT2NqJXKdclV3fNq4q6Qt_nwDuI4wYMilh2hjzhxtqGF9n8ID8hU9FJeSG9fVs5SA-382ETvy40Bfqk5Kwfmo2vfSj3iV3PE1IfCkOsxNbrL7IAHLdNBz4rxk0TWfKLtnAsH&__tn__=-UK-R&c[0]=AT2mbDP4uk-ibrLpj5Mqa4x-HB_H847Bm8HhAwOtoIR4E0i5wlsW9frecM050p2PzgaSKeWi1TMUviqsE3cKp4b33fIqgkN_A65dXEG-ZlzYA5iCDZPWP4gqtYM7JN8GdcczVVMvp99dsYP3r9MjidVJsFmbt_KPK0wcCNQ44q4KsOE">
-						<img src = "whatsapp1.png" class = "social" alt ="Whatsapp">&emsp;Whatsapp<br><br>
+						<img src = "Images/whatsapp1.png" class = "social" alt ="Whatsapp">&emsp;Whatsapp<br><br>
 					</a>
 					<a class = "social-link" href = "https://www.facebook.com/azra.tfs/?ref=page_internal">
-						<img src = "fb1.png" class = "social" alt ="Facebook">&emsp;Facebook<br><br>
+						<img src = "Images/fb1.png" class = "social" alt ="Facebook">&emsp;Facebook<br><br>
 					</a>
 					<a class = "social-link" href = "https://www.instagram.com/the_fashionsouq/">
-						<img src = "insta1.png" class = "social" alt ="Instagram">&emsp;Instagram
+						<img src = "Images/insta1.png" class = "social" alt ="Instagram">&emsp;Instagram
 					</a>
 					<!-- contact us info close -->
 				</div>
@@ -89,32 +89,32 @@
                             $email = $_POST["email"];
                             $contact = $_POST["contact"];
                             $mess = $_POST["mess"];
-            
-            
+
+
                             if($fn == "" && $ln == "" && $email == "" && $contact == "" && $mess == "")
                             {
                                 echo "<script>alert('Please enter all the details')</script>";
                                 return;
                             }
-                            else if($fn == "" && $ln == "")						
+                            else if($fn == "" && $ln == "")
                             {
                                 echo "<script>alert('Please fill in your first and last name')</script>";
                                 return;
                             }
-                            else if($email == "" && $contact == "")	
+                            else if($email == "" && $contact == "")
                             {
                                 echo "<script>alert('Please enter email and contact number')</script>";
                                 return;
                             }
-                            else if($mess == "")					
+                            else if($mess == "")
                             {
                                 echo "<script>alert('Please enter your question')</script>";
                                 return;
                             }
-            
+
                             $con = $db->connectionDb();
                             $query=mysqli_query($con,"INSERT INTO contact(first_name, last_name, contact_no, email, message) VALUES('$fn','$ln','$contact','$email', '$mess')");
-                            
+
                             if($query>0)
                             {
                                 echo "<script>alert('Thank you for contacting us ".$fn." ".$ln.". We will get back to you as soon as possible.')</script>";
@@ -130,16 +130,16 @@
 				</div>
 		</div>
 	</div>
-	
-	<!-- footer open-->		
+
+	<!-- footer open-->
 	<?php
 		require_once("oop.php");
 		$db = new DB();
 		$footer = $db->footer();
 		echo $footer;
-	?>																									
+	?>
 	<!-- footer close-->
-	
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
     	<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -152,4 +152,3 @@
     -->
   </body>
 </html>
-	

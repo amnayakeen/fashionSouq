@@ -12,11 +12,11 @@ $db = new DB();
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
         <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
         <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="shortcut icon" href="../favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/demo.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <noscript>
@@ -26,17 +26,17 @@ $db = new DB();
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-            
+
 
         <link rel = "stylesheet" href = "css/tfsstyle.css">
-        
+
 		<title>Login</title>
   	</head>
     <body>
         <!-- navbar open-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top justify-content-center">																			
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top justify-content-center">
             <div class="container-fluid">
-                <img src="LOGO.png" alt="Logo" height="100">
+                <img src="Images/LOGO.png" alt="Logo" height="100">
                 <a class="navbar-brand justify-content-center" href="index.php"><h4>&nbsp;THE FASHION SOUQ</h4></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,10 +64,10 @@ $db = new DB();
                         <li class="nav-item">
                         <a class="custom-a custom-item" href="Login.php">LOGIN</a>
                         </li>
-                    </ul>                    
-                </div>                    
+                    </ul>
+                </div>
             </div>
-        </nav>																																					
+        </nav>
 	    <!-- navbar close -->
 	    <div class="container  custom-body">
 	        <div class="row">
@@ -128,23 +128,23 @@ $db = new DB();
                     {
                         $rec=mysqli_fetch_assoc($query);
                         $_SESSION["username"]=$rec['username'];
-                        $_SESSION["login_id"]=$rec['login_id'];                           
+                        $_SESSION["login_id"]=$rec['login_id'];
                         if($rec["type"]=="admin")
                         {
                         header('Location: Admin.php');
-                        }    
+                        }
                         else
                         {
                         header('Location: supplier.php');
-                        }                                                                                
-                        mysqli_close($con);                     
+                        }
+                        mysqli_close($con);
                     }
                 }
             }
             ob_flush();
-        ?>													
-        <!-- footer open-->	
-        <footer class='py-4 footer-dark bg-black'>																				
+        ?>
+        <!-- footer open-->
+        <footer class='py-4 footer-dark bg-black'>
         <div class = 'container-fluid'>
                 <div class = 'custom-body custom-footer'>
                         <div class='row'>
@@ -191,8 +191,8 @@ $db = new DB();
                     <div class='d-flex justify-content-center custom-body custom-footer'>
                         <p>&copy; 2021 Company, Inc. All rights reserved.</p>
                     </div>
-                </div>               
-        </footer>																										
+                </div>
+        </footer>
         <!-- footer close-->
         <!-- Optional JavaScript; choose one of the two! -->
             <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -205,5 +205,3 @@ $db = new DB();
         -->
     </body>
 </html>
-	
-    

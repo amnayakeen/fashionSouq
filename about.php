@@ -15,10 +15,10 @@
 		$db = new DB();
 		$nav = $db->navbar();
 		echo $nav;
-	?>																																								
+	?>
 	<!-- navbar close -->
 
-	
+
 	<div class = "container">
 		<div class = "custom-body custom-margin" style = "line-height:35px;">
 			<div class = "row">
@@ -26,7 +26,7 @@
 					<!-- about us info open -->
 					<h2>ABOUT THE FASHION SOUQ</h2>
 					<p>The journey of The Fashion Souq intiated in the year 2015. At the beginning of this journey, the only product TFS was considering was abayas. It started off with a simple goal of providing the people of Sri Lanka good quality and fashionable abayas. To accomplish this, abayas were imported from Dubai. Over these 6 years, The Fashion Souq has grown so much, that not only it has a higher customer base, but the variety of the products available have also increased. With the main product, abaya, remaining the same, other products, such as, <a class = "social-link" href = "shalwars.html">Shalwars</a>, Farashas, Jalabiyas and Kaftan are also imported depending on the seasonal sales.</p>
-					<img src = "Tfs2.png" alt = "The Fashion Souq">
+					<img src = "Images/Tfs2.png" alt = "The Fashion Souq">
 				</div>
 				<!-- aboutus info close -->
 				<div class = "col-md-6">
@@ -39,13 +39,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="a34.jpg" class="d-block w-100 h-100" alt="Unavailable">
+							<img src="Images/a34.jpg" class="d-block w-100 h-100" alt="Unavailable">
 						</div>
 						<div class="carousel-item">
-							<img src="s19.jpg" class="d-block w-100 h-100" alt="Unavailable">
+							<img src="Images/s19.jpg" class="d-block w-100 h-100" alt="Unavailable">
 						</div>
 						<div class="carousel-item">
-							<img src="s22.jpg" class="d-block w-100 h-100" alt="Unavailable">
+							<img src="Images/s22.jpg" class="d-block w-100 h-100" alt="Unavailable">
 						</div>
 					</div>
 						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -62,16 +62,16 @@
 			</div>
 		</div>
 	</div>
-	
-	<!-- footer open-->		
+
+	<!-- footer open-->
 	<?php
 		require_once("oop.php");
 		$db = new DB();
 		$footer = $db->footer();
 		echo $footer;
-	?>																									
+	?>
 	<!-- footer close-->
-	
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
     	<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -84,4 +84,3 @@
     -->
   </body>
 </html>
-	

@@ -16,11 +16,11 @@
                 <meta charset='utf-8'>
                 <meta name='viewport' content='width=device-width, initial-scale=1'>
                 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
                 <meta name='description' content='Elastic Image Slideshow with Thumbnail Preview' />
                 <meta name='keywords' content='jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic' />
                 <meta name='author' content='Codrops' />
-                <link rel='shortcut icon' href='../favicon.ico'> 
+                <link rel='shortcut icon' href='../favicon.ico'>
                 <link rel='stylesheet' type='text/css' href='css/demo.css' />
                 <link rel='stylesheet' type='text/css' href='css/style.css' />
                 <noscript>
@@ -30,18 +30,18 @@
 
             <!-- Bootstrap CSS -->
             <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU' crossorigin='anonymous'>
-            
+
 
             <link rel = 'stylesheet' href = 'css/tfsstyle.css'>
             </head>");
-            
+
         }
 
         public function navbar()
         {
-            echo ("<nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top justify-content-center'>																			
+            echo ("<nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top justify-content-center'>
             <div class='container-fluid'>
-                <img src='LOGO.png' alt='Logo' height='100'>
+                <img src='Images/LOGO.png' alt='Logo' height='100'>
                 <a class='navbar-brand justify-content-center' href='index.php'><h4>&nbsp;THE FASHION SOUQ</h4></a>
                 <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                     <span class='navbar-toggler-icon'></span>
@@ -70,14 +70,14 @@
                             <a class='custom-a custom-item' href='Login.php'>LOGIN</a>
                         </li>
                     </ul>
-                </div>                    
+                </div>
             </div>
         </nav>");
         }
 
         public function footer()
         {
-            echo ("<footer class='py-4 footer-dark bg-black'>																				
+            echo ("<footer class='py-4 footer-dark bg-black'>
                 <div class = 'container-fluid'>
                     <div class = 'custom-body custom-footer'>
                         <div class='row'>
@@ -130,7 +130,7 @@
 
         public function pagenav()
         {
-            echo ("<nav aria-label='Page navigation example'>																		
+            echo ("<nav aria-label='Page navigation example'>
 			<ul class='pagination justify-content-center'>
 				<li class='page-item'><a class='page-link' href='abaya.php'>1</a></li>
 				<li class='page-item'><a class='page-link' href='abaya2.php'>2</a></li>
@@ -142,7 +142,7 @@
 					</a>
 				</li>
 			</ul>
-		    </nav>");	
+		    </nav>");
         }
 
         public function session()
@@ -163,5 +163,5 @@
             $fna = $_SESSION["first_name"];
             $lna = $_SESSION["last_name"];
         }
-    }   
+    }
 ?>

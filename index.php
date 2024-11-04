@@ -15,11 +15,11 @@
 		$db = new DB();
 		$nav = $db->navbar();
 		echo $nav;
-	?>																																								
+	?>
 	<!-- navbar close -->
 
 	<!-- carousel open-->
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">		
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -29,35 +29,35 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="Slider1.jpg" class="d-block w-100 h-100" alt="Unavailable">
+				<img src="Images/Slider1.jpg" class="d-block w-100 h-100" alt="Unavailable">
 				<div class="ei-title  custom-slider-txt">
 					<h2>The</h2>
 					<h2>Fashion Souq</h2>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="Slider2.webp" class="d-block w-100 h-100" alt="Unavailable">
+				<img src="Images/Slider2.webp" class="d-block w-100 h-100" alt="Unavailable">
 				<div class="ei-title custom-slider-txt">
                     <h3>Elegant</h3>
 					<h2>Fashion</h2>
                 </div>
 			</div>
 			<div class="carousel-item">
-				<img src="Slider3.png" class="d-block w-100 h-100" alt="Unavailable">
+				<img src="Images/Slider3.png" class="d-block w-100 h-100" alt="Unavailable">
 				<div class="ei-title custom-slider-txt">
                     <h2>Comfortable</h2>
                     <h3>Style</h3>
                 </div>
 			</div>
 			<div class="carousel-item">
-				<img src="Slider4.jpg" class="d-block w-100 h-100" alt="Unavailable">
+				<img src="Images/Slider4.jpg" class="d-block w-100 h-100" alt="Unavailable">
 				<div class="ei-title custom-slider-txt">
                     <h2>Simply</h2>
                     <h3>Beautiful</h3>
                 </div>
 			</div>
 			<div class="carousel-item">
-				<img src="Slider5.jpg" class="d-block w-100 h-100" alt="Unavailable">
+				<img src="Images/Slider5.jpg" class="d-block w-100 h-100" alt="Unavailable">
 				<div class="ei-title custom-slider-txt">
                     <h2>Modestly</h2>
                     <h3>Fashionable</h3>
@@ -72,17 +72,17 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
-	</div>	
+	</div>
 	<!-- carousel close-->
 
-	
+
 	<div class = "container">
 		<!-- product categories open -->
 		<h2 class = "custom-text">PRODUCT CATEGORIES</h2>
 		<div class = "row">
 			<div class = "col-md-6">
 				<div class="card custom-card custom-text">
-					<a href = "abaya.html"><img src="abaya.png" class="custom-img" alt="ABAYAS"></a>
+					<a href = "abaya.html"><img src="Images/abaya.png" class="custom-img" alt="ABAYAS"></a>
 						<div class="card-body">
 							<a class = "custom-product" href = "abaya.html"><h4 class="card-title">ABAYAS</h4></a>
 						</div>
@@ -90,7 +90,7 @@
 			</div>
 			<div class = "col-md-6">
 				<div class="card custom-card custom-text">
-					<a href = "shalwar.html"><img src="shalwar.jpg" class="custom-img" alt="SHALWARS"></a>
+					<a href = "shalwar.html"><img src="Images/shalwar.jpg" class="custom-img" alt="SHALWARS"></a>
 						<div class="card-body">
 							<a class = "custom-product" href = "shalwar.html"><h4 class="card-title">SHALWARS</h4></a>
 						</div>
@@ -98,13 +98,13 @@
 			</div>
 		</div>
 		<!-- product categories close -->
-		
+
 		<!-- new arrivals open-->
 		<h2 class = "custom-text">NEW ARRIVALS</h2>
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "na6.jpg"><img src="na6.jpg" class="custom-img" alt="CHIFFON EMBROIDED ABAYA"></a>
+					<a href = "Images/na6.jpg"><img src="Images/na6.jpg" class="custom-img" alt="CHIFFON EMBROIDED ABAYA"></a>
 						<div class="card-body">
 							<h6 class="card-title">CHIFFON EMBROIDED ABAYA</h6>
 							<p class="card-text">Available sizes : 52 - 60</p>
@@ -115,7 +115,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "na3.jpg"><img src="na3.jpg" class="custom-img" alt="CHIFFON OPEN ABAYA"></a>
+					<a href = "Images/na3.jpg"><img src="Images/na3.jpg" class="custom-img" alt="CHIFFON OPEN ABAYA"></a>
 						<div class="card-body">
 							<h6 class="card-title">CHIFFON OPEN ABAYA</h6>
 							<p class="card-text">Available sizes : 52 - 60</p>
@@ -126,7 +126,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "na4.jpg"><img src="na4.jpg" class="custom-img" alt="CHIFFON PRINTED ABAYA"></a>
+					<a href = "Images/na4.jpg"><img src="Images/na4.jpg" class="custom-img" alt="CHIFFON PRINTED ABAYA"></a>
 						<div class="card-body">
 							<h6 class="card-title">CHIFFON PRINTED ABAYA</h6>
 							<p class="card-text">Available sizes : 52 - 60</p>
@@ -139,7 +139,7 @@
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s6.jpg"><img src="s6.jpg" class="custom-img" alt="COTTON EMBROIDERY SHALWAR"></a>
+					<a href = "Images/s6.jpg"><img src="Images/s6.jpg" class="custom-img" alt="COTTON EMBROIDERY SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON EMBROIDERY SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -150,7 +150,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s3.jpg"><img src="s3.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
+					<a href = "Images/s3.jpg"><img src="Images/s3.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON PRINTED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -161,7 +161,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "na5.jpg"><img src="na5.jpg" class="custom-img" alt="NIDHA PRINTED ABAYA"></a>
+					<a href = "Images/na5.jpg"><img src="Images/na5.jpg" class="custom-img" alt="NIDHA PRINTED ABAYA"></a>
 						<div class="card-body">
 							<h6 class="card-title">NIDHA PRINTED ABAYA</h6>
 							<p class="card-text">Available sizes : 52 - 60</p>
@@ -174,7 +174,7 @@
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "na1.jpg"><img src="na1.jpg" class="custom-img" alt="NIDHA WORKED ABAYA"></a>
+					<a href = "Images/na1.jpg"><img src="Images/na1.jpg" class="custom-img" alt="NIDHA WORKED ABAYA"></a>
 						<div class="card-body">
 							<h6 class="card-title">NIDHA WORKED ABAYA</h6>
 							<p class="card-text">Available sizes : 52 - 60</p>
@@ -185,7 +185,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s2.jpg"><img src="s2.jpg" class="custom-img" alt="RAYON WORKED SHALWAR"></a>
+					<a href = "Images/s2.jpg"><img src="Images/s2.jpg" class="custom-img" alt="RAYON WORKED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">RAYON WORKED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -196,7 +196,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "na2.jpg"><img src="na2.jpg" class="custom-img" alt="SILK OPEN ABAYA"></a>
+					<a href = "Images/na2.jpg"><img src="Images/na2.jpg" class="custom-img" alt="SILK OPEN ABAYA"></a>
 						<div class="card-body">
 							<h6 class="card-title">SILK OPEN ABAYA</h6>
 							<p class="card-text">Available sizes : 52 - 60</p>
@@ -208,16 +208,16 @@
 		</div>
 		<!-- new arrivals close -->
 	</div>
-	
-	<!-- footer open-->		
+
+	<!-- footer open-->
 	<?php
 		require_once("oop.php");
 		$db = new DB();
 		$footer = $db->footer();
 		echo $footer;
-	?>																									
+	?>
 	<!-- footer close-->
-	
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
     	<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -230,4 +230,3 @@
     -->
   </body>
 </html>
-	

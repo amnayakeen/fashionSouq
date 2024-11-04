@@ -15,16 +15,16 @@
 		$db = new DB();
 		$nav = $db->navbar();
 		echo $nav;
-	?>																																								
+	?>
 	<!-- navbar close -->
-	
+
 	<div class = "container custom-margin">
 	<!-- shalwar open-->
 	<h2 class = "custom-text">SHALWARS</h2>
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s7.jpg"><img src="s7.jpg" class="custom-img" alt="COTTON EMBROIDERY SHALWAR"></a>
+					<a href = "Images/s7.jpg"><img src="Images/s7.jpg" class="custom-img" alt="COTTON EMBROIDERY SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON EMBROIDERY SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -35,7 +35,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s8.jpg"><img src="s8.jpg" class="custom-img" alt="COTTON EMBROIDERY SHALWAR"></a>
+					<a href = "Images/s8.jpg"><img src="Images/s8.jpg" class="custom-img" alt="COTTON EMBROIDERY SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON EMBROIDERY SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -46,7 +46,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s9.jpg"><img src="s9.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
+					<a href = "Images/s9.jpg"><img src="Images/s9.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON PRINTED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -59,7 +59,7 @@
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s10.jpg"><img src="s10.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
+					<a href = "Images/s10.jpg"><img src="Images/s10.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON PRINTED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -70,7 +70,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s11.jpg"><img src="s11.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
+					<a href = "Images/s11.jpg"><img src="Images/s11.jpg" class="custom-img" alt="COTTON PRINTED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON PRINTED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -81,7 +81,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s12.jpg"><img src="s12.jpg" class="custom-img" alt="COTTON SHALWAR"></a>
+					<a href = "Images/s12.jpg"><img src="Images/s12.jpg" class="custom-img" alt="COTTON SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -94,7 +94,7 @@
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s13.jpg"><img src="s13.jpg" class="custom-img" alt="COTTON SHALWAR"></a>
+					<a href = "Images/s13.jpg"><img src="Images/s13.jpg" class="custom-img" alt="COTTON SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -105,7 +105,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s14.jpg"><img src="s14.jpg" class="custom-img" alt="COTTON WORKED SHALWAR"></a>
+					<a href = "Images/s14.jpg"><img src="Images/s14.jpg" class="custom-img" alt="COTTON WORKED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON WORKED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -116,7 +116,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s15.jpg"><img src="s15.jpg" class="custom-img" alt="COTTON WORKED SHALWAR"></a>
+					<a href = "Images/s15.jpg"><img src="Images/s15.jpg" class="custom-img" alt="COTTON WORKED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON WORKED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -129,7 +129,7 @@
 		<div class = "row">
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s16.jpg"><img src="s16.jpg" class="custom-img" alt="COTTON WORKED SHALWAR"></a>
+					<a href = "Images/s16.jpg"><img src="Images/s16.jpg" class="custom-img" alt="COTTON WORKED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">COTTON WORKED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -140,7 +140,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s17.jpg"><img src="s17.jpg" class="custom-img" alt="RAYON WORKED SHALWAR"></a>
+					<a href = "Images/s17.jpg"><img src="Images/s17.jpg" class="custom-img" alt="RAYON WORKED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">RAYON WORKED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -151,7 +151,7 @@
 			</div>
 			<div class = "col-md-4">
 				<div class="card custom-card custom-text">
-					<a href = "s18.jpg"><img src="s18.jpg" class="custom-img" alt="RAYON WORKED SHALWAR"></a>
+					<a href = "Images/s18.jpg"><img src="Images/s18.jpg" class="custom-img" alt="RAYON WORKED SHALWAR"></a>
 						<div class="card-body">
 							<h6 class="card-title">RAYON WORKED SHALWAR</h6>
 							<p class="card-text">Material available</p>
@@ -163,16 +163,16 @@
 		</div>
 		<!-- shalwar close-->
 	</div>
-	
-	<!-- footer open-->		
+
+	<!-- footer open-->
 	<?php
 		require_once("oop.php");
 		$db = new DB();
 		$footer = $db->footer();
 		echo $footer;
-	?>																									
+	?>
 	<!-- footer close-->
-	
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
     	<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -185,4 +185,3 @@
     -->
   </body>
 </html>
-	

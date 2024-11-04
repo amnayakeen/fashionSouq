@@ -16,11 +16,11 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name='description' content='Elastic Image Slideshow with Thumbnail Preview' />
         <meta name='keywords' content='jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic' />
         <meta name='author' content='Codrops' />
-        <link rel='shortcut icon' href='../favicon.ico'> 
+        <link rel='shortcut icon' href='../favicon.ico'>
         <link rel='stylesheet' type='text/css' href='css/demo.css' />
         <link rel='stylesheet' type='text/css' href='css/style.css' />
         <noscript>
@@ -30,16 +30,16 @@
 
         <!-- Bootstrap CSS -->
         <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU' crossorigin='anonymous'>
-            
+
 
         <link rel = 'stylesheet' href = 'css/tfsstyle.css'>
         <TITLE>Admin Panel</TITLE>
     </head>
     <body>
         <!--nav open-->
-        <nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>			
+        <nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>
             <div class='container-fluid custom-body'>
-                <img src='LOGO.png' alt='Logo' height='100'>
+                <img src='Images/LOGO.png' alt='Logo' height='100'>
                 <a class='navbar-brand justify-content-center' href='index.php'><h4>&nbsp;THE FASHION SOUQ</h4></a>
                 <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                     <span class='navbar-toggler-icon'></span>
@@ -61,7 +61,7 @@
                             </svg>&emsp;ADMIN
                         </li>
                     </ul>
-                </div>                    
+                </div>
             </div>
         </nav>
         <!--nav close-->
@@ -179,7 +179,7 @@
                     $query=mysqli_query($con,"SELECT * FROM supplier where supp_id='".$id."' ");
                     $query2=mysqli_query($con,"SELECT * FROM login where login_id='".$lid."' ");
                     $nor=mysqli_num_rows($query);
-                    
+
                     if($nor>0)
                     {
                         $row = mysqli_fetch_array($query);
@@ -196,7 +196,7 @@
                         $una = $row['username'];
                         $pass = $row['pass'];
 
-                
+
                     echo ("<div class = 'container custom-item2'>
                         <hr>
                         <form class='row g-3 custom-margin' method = 'POST' action = 'Admin.php' enctype = 'multipart/form-data'>
@@ -302,13 +302,13 @@
                 $un=$_POST["un"];
                 $pass=$_POST["pass"];
                 $type1 = 'user';
-                
+
                 $fname=$_FILES['file']['name'];
                 $tmpName= $_FILES['file']['tmp_name'];
                 $fileSize=$_FILES['file']['size'];
                 $fileType=$_FILES['file']['type'];
 
-                if($lid == "" && $fna == "" && $lna == "" && $em == "" && $cont == "" && $un =="" && $pass == "" &&$fname == "") 
+                if($lid == "" && $fna == "" && $lna == "" && $em == "" && $cont == "" && $un =="" && $pass == "" &&$fname == "")
                 {
                     echo "<script>alert('Please enter all the required details')</script>";
                 }
@@ -335,11 +335,11 @@
                 else if($pass == "")
                 {
                     echo "<script>alert('Please enter the password')</script>";
-                } 
+                }
                 else if($fname == "")
                 {
                     echo "<script>alert('Please choose an image')</script>";
-                } 
+                }
                 else
                 {
                     if(move_uploaded_file($_FILES['file']['tmp_name'], $target))
@@ -350,14 +350,14 @@
                     {
                         echo "<script>alert('Sorry, there was a problem uploading your file.')</script>";
                     }
-    
-    
+
+
                     $con = $db->connectionDb();
-    
+
                     $query=mysqli_query($con,"INSERT INTO supplier(first_name, last_name, contact_no, email, address, age, image, login_id) VALUES('$fna','$lna','$cont','$em','$add','$age', '$fname', '$lid')");
                     $query=mysqli_query($con,"INSERT INTO login(login_id,username, pass, type) VALUES('$lid','$un','$pass', '$type1')");
-    
-    
+
+
                     if($query=1)
                     {
                         echo "<div class = 'container custom-body custom-margin'>
@@ -380,8 +380,8 @@
                         echo "<script>alert('Error')</script>";
                     }
                 }
-            } 
-            
+            }
+
             if(isset ($_POST["Search"]))
             {
                echo display();
@@ -419,7 +419,7 @@
                 $fileType=$_FILES['file']['type'];
 
                 if($id=="")
-                {		
+                {
                         echo "<script>alert('Please fill in all the details')</script>";
                         return;
                 }
@@ -462,7 +462,7 @@
                 {
                     echo "<script>alert('Please choose an Image.')</script>";
                 }
-                
+
                 $con = $db->connectionDb();
                 $query=mysqli_query($con,"UPDATE supplier SET first_name = '$fna' , last_name = '$lna' , email = '$em' , contact_no = '$tel' , age = '$age' , address = '$add' , image = '$fname' WHERE supp_id='$id'");
                 $query=mysqli_query($con,"UPDATE login SET login_id = '$lid', username ='$un', pass = '$pass' WHERE login_id = '$lid'");
@@ -470,7 +470,7 @@
 
                 if($query>0)
                 {
-                    echo display(); 
+                    echo display();
                 }
 
                 else
@@ -519,7 +519,7 @@
                         echo ("<td>".$rec['login_id']."</td>");
                         echo ("<td style = 'text-align:center'><a href='upload/".$rec['image']."' target='blank'><img src='upload/".$rec['image']."' width='200'></a></td>");
                         echo "</tr>";
-                        						
+
                     }
 
                     mysqli_close($con);
@@ -528,7 +528,7 @@
                     echo ("</div>");
                 }
             }
-            
+
             if(isset($_POST["Delete"]))
             {
                 $id = $_POST["id"];
@@ -560,7 +560,7 @@
         ?>
 
         <!--footer open-->
-        <footer class='py-4 footer-dark bg-black'>																				
+        <footer class='py-4 footer-dark bg-black'>
             <div class = 'container-fluid'>
                 <div class='d-flex justify-content-center custom-body custom-footer'>
                     <p>ADMIN PANEL</p>
@@ -571,6 +571,5 @@
             </div>
         </footer>
         <!--footer close-->
-    </body> 
+    </body>
 </html>
-

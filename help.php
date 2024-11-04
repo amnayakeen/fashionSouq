@@ -15,9 +15,9 @@
 		$db = new DB();
 		$nav = $db->navbar();
 		echo $nav;
-	?>																																								
+	?>
 	<!-- navbar close -->
-	
+
 	<div class = "container">
 		<div class = "row">
 			<div class = "col-md-6">
@@ -117,32 +117,32 @@
                             $email = $_POST["email"];
                             $contact = $_POST["contact"];
                             $help = $_POST["help"];
-            
-            
+
+
                             if($fn == "" && $ln == "" && $email == "" && $contact == "" && $help == "")
                             {
                                 echo "<script>alert('Please enter all the details')</script>";
                                 return;
                             }
-                            else if($fn == "" && $ln == "")						
+                            else if($fn == "" && $ln == "")
                             {
                                 echo "<script>alert('Please fill in your first and last name')</script>";
                                 return;
                             }
-                            else if($email == "" && $contact == "")	
+                            else if($email == "" && $contact == "")
                             {
                                 echo "<script>alert('Please enter email and contact number')</script>";
                                 return;
                             }
-                            else if($help == "")					
+                            else if($help == "")
                             {
                                 echo "<script>alert('Please enter your question')</script>";
                                 return;
                             }
-            
+
                             $con = $db->connectionDb();
                             $query=mysqli_query($con,"INSERT INTO help(first_name, last_name, contact_no, email, help_mess) VALUES('$fn','$ln','$contact','$email', '$help')");
-                            
+
                             if($query>0)
                             {
                                 echo "<script>alert('Thank you for contacting us ".$fn." ".$ln.". We will get back to you as soon as possible.')</script>";
@@ -158,16 +158,16 @@
 				</div>
 		</div>
 	</div>
-	
-	<!-- footer open-->		
+
+	<!-- footer open-->
 	<?php
 		require_once("oop.php");
 		$db = new DB();
 		$footer = $db->footer();
 		echo $footer;
-	?>																									
+	?>
 	<!-- footer close-->
-	
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
     	<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -180,4 +180,3 @@
     -->
   </body>
 </html>
-	

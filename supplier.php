@@ -17,11 +17,11 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name='description' content='Elastic Image Slideshow with Thumbnail Preview' />
         <meta name='keywords' content='jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic' />
         <meta name='author' content='Codrops' />
-        <link rel='shortcut icon' href='../favicon.ico'> 
+        <link rel='shortcut icon' href='../favicon.ico'>
         <link rel='stylesheet' type='text/css' href='css/demo.css' />
         <link rel='stylesheet' type='text/css' href='css/style.css' />
         <noscript>
@@ -31,7 +31,7 @@
 
         <!-- Bootstrap CSS -->
         <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU' crossorigin='anonymous'>
-            
+
 
         <link rel = 'stylesheet' href = 'css/tfsstyle.css'>
         <TITLE>Supplier Panel</TITLE>
@@ -53,9 +53,9 @@
             $fna = $_SESSION["first_name"];
             $lna = $_SESSION["last_name"];
 
-            echo ("<nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>																			
+            echo ("<nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>
                 <div class='container-fluid custom-body'>
-                    <img src='LOGO.png' alt='Logo' height='100'>
+                    <img src='Images/LOGO.png' alt='Logo' height='100'>
                     <a class='navbar-brand' href='index.php'><h4>&nbsp;THE FASHION SOUQ</h4></a>
                     <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                     <span class='navbar-toggler-icon'></span>
@@ -68,11 +68,11 @@
                                 </svg>&emsp;".$fna." ".$lna."
                             </li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
             </nav>");
         ?>
-        
+
         <?php
             $con = $db->connectionDb();
             $query=mysqli_query($con,"SELECT * FROM supplier WHERE login_id='$login'");
@@ -103,7 +103,7 @@
                     <div class = 'col-md-6'>
                     <a href = 'Logout.php'><button type='submit' class='btn btn-light custom-item2' style = 'border-color:#000' name = 'logout' >LOGOUT</button></a>
                     </div></div></div>");
-                    mysqli_close($con); 
+                    mysqli_close($con);
                 }
             }
         ?>
@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>
-            
+
 
         <!--form open-->
         <!--form close-->
@@ -313,7 +313,7 @@
                 {
                     echo "<script>alert('The file ". basename( $_FILES['file']['name']). " has been uploaded')</script>";
                 }
-                else 
+                else
                 {
                     echo "<script>alert('Error')</script>";
                 }
@@ -330,16 +330,16 @@
                 $price=$_POST["sprice"];
                 $size=$_POST["size"];
                 $status=$_POST["status"];
-                
+
                 $fname=$_FILES['file']['name'];
                 $tmpName= $_FILES['file']['tmp_name'];
                 $fileSize=$_FILES['file']['size'];
                 $fileType=$_FILES['file']['type'];
 
-                if($pna == "" && $price =="" && $cat =="" && $quant =="" && $cost =="" && $size =="" && $status =="" && $fname =="") 
+                if($pna == "" && $price =="" && $cat =="" && $quant =="" && $cost =="" && $size =="" && $status =="" && $fname =="")
                 {
                     echo "<script>alert('Please enter all the details')</script>";
-                    return; 
+                    return;
                 }
                 else if($pna == "")
                 {
@@ -365,12 +365,12 @@
                 {
                     echo "<script>alert('Please enter the selling price of the product')</script>";
                     return;
-                } 
+                }
                 else if($size == "")
                 {
                     echo "<script>alert('Please enter the available sizes of the product')</script>";
                     return;
-                } 
+                }
                 else if($status == "")
                 {
                     echo "<script>alert('Please enter the status of the product as Available/Need to be restocked/Unavailable')</script>";
@@ -387,7 +387,7 @@
 
                 if($query>0)
                 {
-                    
+
                     echo "<div class = 'container custom-margin'>
                     <div class = 'row'>
                     <div class = 'col-md-12'><center><h2>Successfully Added!</h2>";
@@ -399,15 +399,15 @@
                     echo "Size: $size <br>";
                     echo "Status: $status <br>";
                     echo "Image name: $fname <br>";
-                    echo "Supplier Id: $sid <br></center></div></div></div>"; 
+                    echo "Supplier Id: $sid <br></center></div></div></div>";
                 }
                 else
                 {
                     echo "<script>alert('Error')</script>";
                 }
             }
-             
-            
+
+
             if(isset ($_POST["Search"]))
             {
                 echo display();
@@ -422,7 +422,7 @@
                 {
                     echo "<script>alert('The file ". basename( $_FILES['file']['name']). " has been uploaded')</script>";
                 }
-                
+
                 require_once("oop.php");
                 $db = new DB();
                 $sess = $db->session();
@@ -436,7 +436,7 @@
                 $price=$_POST["sprice"];
                 $size=$_POST["size"];
                 $status=$_POST["status"];
-                    
+
                 $fname=$_FILES['file']['name'];
                 $tmpName= $_FILES['file']['tmp_name'];
                 $fileSize=$_FILES['file']['size'];
@@ -487,7 +487,7 @@
 
                     if($query>0)
                     {
-                        echo display(); 
+                        echo display();
                     }
                     else
                     {
@@ -540,7 +540,7 @@
                         echo ("<td>".$rec['supp_id']."</td>");
                         echo ("<td style = 'text-align:center'><a href='TFS/".$rec['image']."' target='blank'><img src='TFS/".$rec['image']."' width='200'></a></td>");
                         echo "</tr>";
-                        						
+
                     }
 
                     echo ("</table></div>");
@@ -548,7 +548,7 @@
                     mysqli_close($con);
                 }
             }
-            
+
             if(isset($_POST["Delete"]))
             {
                 require_once("oop.php");
@@ -576,7 +576,7 @@
         ?>
 
         <!--footer open-->
-        <footer class='py-4 footer-dark bg-black'>																				
+        <footer class='py-4 footer-dark bg-black'>
             <div class = 'container-fluid'>
                 <div class='d-flex justify-content-center custom-body custom-footer'>
                     <p>SUPPLIER PANEL</p>
@@ -587,6 +587,5 @@
             </div>
         </footer>
         <!--footer close-->
-    </body> 
+    </body>
 </html>
-

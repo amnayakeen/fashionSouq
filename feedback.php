@@ -5,11 +5,11 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name='description' content='Elastic Image Slideshow with Thumbnail Preview' />
         <meta name='keywords' content='jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic' />
         <meta name='author' content='Codrops' />
-        <link rel='shortcut icon' href='../favicon.ico'> 
+        <link rel='shortcut icon' href='../favicon.ico'>
         <link rel='stylesheet' type='text/css' href='css/demo.css' />
         <link rel='stylesheet' type='text/css' href='css/style.css' />
         <noscript>
@@ -19,16 +19,16 @@
 
         <!-- Bootstrap CSS -->
         <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU' crossorigin='anonymous'>
-            
+
 
         <link rel = 'stylesheet' href = 'css/tfsstyle.css'>
         <TITLE>Feedback</TITLE>
     </head>
     <body>
         <!--nav open-->
-        <nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>			
+        <nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>
             <div class='container-fluid custom-body'>
-                <img src='LOGO.png' alt='Logo' height='100'>
+                <img src='Images/LOGO.png' alt='Logo' height='100'>
                 <a class='navbar-brand justify-content-center' href='index.php'><h4>&nbsp;THE FASHION SOUQ</h4></a>
                 <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                     <span class='navbar-toggler-icon'></span>
@@ -50,7 +50,7 @@
                             </svg>&emsp;ADMIN
                         </li>
                     </ul>
-                </div>                    
+                </div>
             </div>
         </nav>
         <!--nav close-->
@@ -90,7 +90,7 @@
                         echo ("<td>".$rec['contact_no']."</td>");
                         echo ("<td>".$rec['message']."</td>");
                         echo "</tr>";
-                        						
+
                     }
 
                     mysqli_close($con);
@@ -106,7 +106,7 @@
             </div>
         </div>
         <!--footer open-->
-        <footer class='py-4 footer-dark bg-black'>																				
+        <footer class='py-4 footer-dark bg-black'>
             <div class = 'container-fluid'>
                 <div class='d-flex justify-content-center custom-body custom-footer'>
                     <p>ADMIN PANEL</p>
@@ -117,6 +117,5 @@
             </div>
         </footer>
         <!--footer close-->
-    </body> 
+    </body>
 </html>
-
