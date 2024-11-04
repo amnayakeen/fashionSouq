@@ -1,0 +1,110 @@
+.custom-a{
+    font-size: 15px;
+    font-weight: 490;
+    display: block;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    }
+    .custom-a:hover{
+    color: #fff;
+    }
+    .custom-body{
+    font-size: 17px;
+    }
+    .custom-button{
+    background-color: transparent;
+    color: #fff;
+    padding:10px;
+    }
+    .custom-button:hover{
+    padding: 12px;
+    }
+    .custom-card{
+    border: 0 solid;
+    margin-top: 50px;
+    }
+    .custom-footer{
+    margin-left: 10px;
+    }
+    .custom-footer h5{
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    }
+    .custom-footer p{
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    }
+    .custom-img{
+    height:400px;
+    max-width: 100%;
+    }
+    .custom-item{
+    margin-right: 8px;
+    padding: 1rem;
+    }
+    .custom-item1{
+    margin-right: 50px;
+    padding: 1rem;
+    color: white;
+    }
+    .custom-color{
+    color: white;
+    }
+    .custom-item2{
+    margin-top: 25px;
+    margin-bottom: 14px;
+    }
+    .custom-list{
+    margin-right: 170px;
+    }
+    .custom-margin{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    }
+    .custom-left{
+    margin-left: 200px;
+    }
+    .custom-right{
+    margin-left: 180px;
+    }
+    .custom-right2{
+    margin-left: 490px;
+    }
+    .custom-nav{
+    margin-left: 10px;
+    }
+    .custom-product{
+    color: #000;
+    text-decoration: none;
+    }
+    .custom-product:hover{
+    color: silver;
+    }
+    .custom-slider-txt{
+    margin-top: 80px;
+    background-color: transparent;
+    }
+    .custom-text{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    .social{
+    height: 50px;
+    }
+    .social-link{
+    color: #000;
+    text-decoration: none;
+    }
+    .social-link:hover{
+    color: silver;
+    }
+    .space{
+    margin-right:10px;
+    }
+    
+    
+    
+    
+    
